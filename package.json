@@ -37,21 +37,20 @@
     "react-map-gl": "^6.1.17",
     "react-map-gl-geocoder": "^2.2.0",
     "react-router-dom": "^6.4.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "url": "^0.11.3",
     "web-vitals": "^1.1.2",
     "worker-loader": "^3.0.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -67,8 +66,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-react-app": "^5.2.1",
+    "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0"
   }
